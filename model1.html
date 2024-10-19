@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .main{
+            background-color: black;
+            width: 600px;
+            height: 300px;
+        }
+        h1{
+            text-align: center;
+            color: rgba(66, 153, 225, 0.6);
+        }
+        .box-container{
+            display: flex;
+            padding: 30px;
+            justify-content: space-between;
+            background-color: black;
+            
+            
+        }
+        .box:nth-child(1){
+            width:100px;
+            height: 120px;
+            background-color:#fff8c5;
+            
+        }
+        .box:nth-child(2){
+            width:100px;
+            height: 120px;
+            background-color: #8250df;
+           
+        }
+        div:nth-child(3){
+            width:100px;
+            height: 120px;
+            background-color:#d1242f;
+            cursor: pointer;
+        }
+        .box:nth-child(4){
+            width: 100px;
+            height: 120px;
+            background-color: #1f883d;
+        }
+        .box:nth-child(3):hover ~ .box:nth-child(4) {
+            cursor: pointer;
+            background-color: rgb(207, 182, 182);
+            opacity: 0.5;
+        }
+        .box:nth-child(2):hover ~ .box:nth-child(1) {
+            width: 100px;
+            height: 120px;
+            background-color: aqua;
+            opacity: 0.5;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <H1>CARDS</H1>
+    <div class="box-container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    </div>
+    
+</body>
+</html>
